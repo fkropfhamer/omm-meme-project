@@ -1,0 +1,6 @@
+[submodule "omm-api"]
+	path = omm-api
+	url = git@github.com:fkropfhamer/omm-api.git
+[submodule "omm-client"]
+	path = omm-client
+	url = git@github.com:fkropfhamer/omm-client.git
