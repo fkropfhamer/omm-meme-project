@@ -1,0 +1,22 @@
+version: "3"
+services:
+  mongodb:
+    image: "mongo:latest"
+    ports:
+      - "27017:27017"
+  nodeapp:
+    build:
+      context: ./omm-api
+      dockerfile: Dockerfile
+    environment:
+      - MONGODB_URI=mongodb:27017
+    ports:
+      - "8000:8000"
+    links:
+      - mongodb
+  client:
+    build:
+      context: ./omm-client
+      dockerfile: Dockerfile
+    ports: 
+      - "3000:80"
