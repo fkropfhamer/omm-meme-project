@@ -4,3 +4,6 @@
 [submodule "omm-client"]
 	path = omm-client
 	url = git@github.com:fkropfhamer/omm-client.git
+[submodule "omm-meme-ios-app"]
+	path = omm-meme-ios-app
+	url = git@github.com:fkropfhamer/omm-meme-ios-app.git
